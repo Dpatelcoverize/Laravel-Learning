@@ -12,9 +12,9 @@ class UserController extends Controller
         // return "Welcome";
         return view('user');
     }
-    // function aboutUser(){
-    //     return "This is about user";
-    // }
+                // function aboutUser(){
+                //     return "This is about user";
+                // }
     function getUserName($name){
         // return "Hello this is ". $name;
         return view('getuser', ['name'=>$name]);
@@ -22,7 +22,18 @@ class UserController extends Controller
     function login(){
         return view('admin.login');
     }
-    function about($name){
-        return view('about', ['name'=>'Devanshi', 'rand'=>rand()]);
+    // function about($name){
+    //     return view('about', 
+    //     ['name'=>'Priya', 
+    //     'rand'=>rand(),
+    //     'user'=>['Devanshi', 'Raya', 'Riya']
+    //     ]);
+    // }
+    function aboutUser(){
+        return view('about', 
+        ['name'=>'Priya', 
+        'rand'=>rand(),
+        'user'=>['Devanshi', 'Raya', 'Riya']
+        ]);
     }
 }

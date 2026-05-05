@@ -18,3 +18,6 @@ Route::get('/about/{name}', [UserController::class, 'about']);
 Route::get('/admin/hello', function () {
     return view('admin.hello');
 });
+Route::get('/home', function () {
+    return view('home');
+});
