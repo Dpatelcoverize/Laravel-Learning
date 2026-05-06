@@ -1,5 +1,5 @@
 <div>
-    <span class="success">{{ $message }}</span>
+    <span class="{{ $class }}">{{ $message }}</span>
     
 </div>
 
