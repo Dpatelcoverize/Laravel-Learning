@@ -21,3 +21,6 @@ Route::get('/admin/hello', function () {
 Route::get('/home', function () {
     return view('home');
 });
+Route::get('/user-form', function () {
+    return view('user-Form');
+});
